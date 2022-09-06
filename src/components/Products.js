@@ -166,7 +166,7 @@ const Products = () =>{
 
                 {ele.discount ?
                  <p className="productPrice">
-                  <span className="originalPrice">{ele.price} </span>
+                  <span className="originalPrice">{ele.price} </span><br/>
                   <span className="discount">  ({ele.discount}) %OFF </span><br/>
                   <span className="discountPrice">{(ele.price - (ele.price*ele.discount)/100)}</span>
                  </p>
