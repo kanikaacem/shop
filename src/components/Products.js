@@ -1,6 +1,7 @@
 import React from 'react';
 import "./main.css";
 import StarRatingComponent from 'react-star-rating-component';
+import { elementClosest } from '@fullcalendar/react';
 
 const Products = () =>{
     const productData = [
@@ -149,7 +150,7 @@ const Products = () =>{
     <div className="productPage">
     {  productData.map((ele,id) => {
           return (
-            <div className="product" style={{width:'200px'}} key={id}>
+            <div className="product" style={{width:'250px'}} key={id}>
             <div className="productImage">
             <img style={{width:"100%"}} src={ele.productImage} alt=""/>
             </div>
@@ -163,7 +164,14 @@ const Products = () =>{
                     value={ele.rating}
                 />
 
-                <p className="productPrice">{ele.price}</p>
+                {ele.discount ?
+                 <p className="productPrice">
+                  <span className="originalPrice">{ele.price} </span>
+                  <span className="discount">  ({ele.discount}) %OFF </span><br/>
+                  <span className="discountPrice">{(ele.price - (ele.price*ele.discount)/100)}</span>
+                 </p>
+                 : <p className="productPrice">{ele.price}</p>}
+
             </div>
         </div>
           )
