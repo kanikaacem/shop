@@ -12,7 +12,8 @@ const NavLogo = () => {
           Or added via css to provide different ones for different color themes
          */}
         {/* <div className="img" /> */}
-        <h1 style={{color:'white'}}>Shopping Site</h1>
+        {/* <h1 style={{color:'white'}}>Shopping Site</h1> */}
+        <img style={{width:'100px',height:'80px'}}src="/img/logo/logo.png" alt="logo"/>
       </Link>
     </div>
   );
