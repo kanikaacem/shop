@@ -1,5 +1,8 @@
-export default {
-    ProductData: [
+import React from 'react';
+import "./main.css";
+
+const ProductPage = () =>{
+    const productData = [
         {
             id:1,
             companyName: 'Wings',
@@ -141,5 +144,32 @@ export default {
             discount: 20
         }
     ]
-      
-  };
+    // const showProductDescription = (id) =>{
+    //    window.location.href = `productDescription/${id}`;
+    // }
+    return (<>
+    <div className="productPage">
+    {  productData.map((ele,id) => {
+          return (
+            <div className="product" style={{width:'250px',cursor:'pointer'}} key={ele.id}>
+                <div className="productImage">
+                    <img style={{width:"100%"}} src={ele.productImage} alt=""/>
+                </div>
+                <div className="productDescription">
+                    {
+                    ele.discount && <div className="discountDiv"><div className="productDiscount"> UPTO {ele.discount} OFF </div><div > Deal of the Day </div></div>
+                    }
+                    <h3 className="productName"> {ele.productName.replace('_',' ')}</h3>
+                </div>
+            </div>
+          )
+
+        })
+      }
+
+    </div>
+    </>
+    )
+}
+
+export default ProductPage;

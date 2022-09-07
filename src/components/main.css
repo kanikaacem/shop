@@ -1,11 +1,3 @@
-.productDescription {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
 .productPage {
     display: flex;
     align-items: center;
@@ -17,4 +9,37 @@
 .originalPrice {
     text-decoration: line-through;
     color: red;
+}
+
+.productPrice {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+
+
+.productName {
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+.productDescription {
+    height: 100px;
+    padding: 10px 0;
+}
+
+.productDiscount {
+    background: #eb5858;
+    width: fit-content;
+    padding: 2px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 2px 5px;
+    margin-right: 10px;
+}
+
+.discountDiv {
+    display: flex;
 }
