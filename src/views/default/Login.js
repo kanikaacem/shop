@@ -48,8 +48,11 @@ const Login = () => {
       <div className="sw-lg-50 px-5">
         <div className="sh-11">
           <NavLink to="/">
-            <div className="logo-default" />
+            <div style={{fontSize:'25px',color:'black'}}> Shopping Site</div>
           </NavLink>
+          {/* <NavLink to="/">
+            <div className="logo-default" />
+          </NavLink> */}
         </div>
         <div className="mb-5">
           <h2 className="cta-1 mb-0 text-primary">Welcome,</h2>

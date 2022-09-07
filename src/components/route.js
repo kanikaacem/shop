@@ -1,10 +1,11 @@
 import ProductPage from "./productPage";
+import ProductDescription from "./ProductDescription";
 
 export default {
     path: [
       { 
         index:1,
-        path: '',
+        path: '/',
         name: '/',
         type: 'link',
         component:ProductPage
@@ -13,9 +14,11 @@ export default {
       { 
         index:2,
         path: `/productDescription`,
-        name: '/',
+        name: '/productDescription',
         type: 'link',
+        component:ProductDescription
       },
+
     ]
       
   };
