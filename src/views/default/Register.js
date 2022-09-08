@@ -50,12 +50,12 @@ const Register = () => {
       <div className="sw-lg-50 px-5">
         <div className="sh-11">
           <NavLink to="/">
-            <div className="logo-default" />
+          <img style={{width:'100px',height:'80px'}}src="/img/logo/logo.png" alt="logo"/>
           </NavLink>
         </div>
         <div className="mb-5">
           <h2 className="cta-1 mb-0 text-primary">Welcome,</h2>
-          <h2 className="cta-1 text-primary">let's get the ball rolling!</h2>
+          <h2 className="cta-1 text-primary">Happiness is not in money, but in Shopping!</h2>
         </div>
         <div className="mb-5">
           <p className="h6">Please use the form to register.</p>

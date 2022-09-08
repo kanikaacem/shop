@@ -48,7 +48,7 @@ const Login = () => {
       <div className="sw-lg-50 px-5">
         <div className="sh-11">
           <NavLink to="/">
-            <div style={{fontSize:'25px',color:'black'}}> Shopping Site</div>
+          <img style={{width:'100px',height:'80px'}}src="/img/logo/logo.png" alt="logo"/>
           </NavLink>
           {/* <NavLink to="/">
             <div className="logo-default" />
